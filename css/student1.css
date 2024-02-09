@@ -51,3 +51,25 @@ body{
     margin-bottom: 10px;
     text-align: center;
  }
+
+ .gallery {
+   display: grid;
+   grid-template-columns: 1fr 1fr;
+   border: 2px dashed black;
+   width: 90%;
+   column-gap: 20px;
+   row-gap: 20px;
+   justify-content: center;
+   align-items: stretch;
+ }
+
+ .gallery img {
+   width: 100%;
+ }
+
+ img:last-of-type {
+   grid-column: 1 / span 2;
+ }
+
+
+
